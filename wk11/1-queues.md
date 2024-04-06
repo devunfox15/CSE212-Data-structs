@@ -8,13 +8,13 @@ To grasp the concept of a queue, it's helpful to draw a comparison with another 
 
 A stack operates on the principle of Last In, First Out (LIFO), meaning that the last item added to the stack is the first one to be removed. Conversely, a queue follows the principle of First In, First Out (FIFO), where the item that enters the queue first is the one to be removed first.
 
-![queue](image1.png)
+![queue](img/image1.png)
 
 **Queue ATM Example**
 
 Imagine you're at an ATM in a busy area. There's a line of people waiting to withdraw money. This line operates on the principle of First In, First Out (FIFO). The person who arrived first at the ATM will be the first to complete their transaction and leave. As each person finishes their transaction, the next person in the queue steps forward to access the machine. This orderly system ensures that everyone has a fair chance to use the ATM, with those who've been waiting the longest being served first. So today you have learned that you have been surround by and influenced by Queues one way or another throughout your life. 
 
-![Line at the Bank](bank-line.png)
+![Line at the Bank](img/bank-line.png)
 
 **Operation on Queues**
 
@@ -47,7 +47,7 @@ To enqueue an item or in simplier words add to the queue we must do the follow:
  
  Below are more was that you can Enqueue data into a list, get the size of the list, and even empty they list. It also talks about the performance that the data structure is able to do in Big O' notation. 
 
-![Common Queue Operation Table](queuestruct.png)
+![Common Queue Operation Table](img/queuestruct.png)
 
 ## Type of Queues
 
@@ -199,8 +199,8 @@ Think of a line where people can join and leave from both ends. That's a double-
 
 Here is a sample problem that will teach you how to use a circular. Go ahead and solve this problem.
 
-([circularQueue.py](circularQueue.py))
+([circularQueue.py](python-Files/circularQueue.py))
 
 After writing the the code above compare it to this code block here.
 
-([circularQueueAKey.py](circularQueueAnswerKey.py))S
+([circularQueueAKey.py](python-Files/circularQueueAnswerKey.py))S

@@ -16,7 +16,7 @@ Imagine we're building a family tree for a person named Alex. Alex has married J
 
 Here's how we can represent this family tree as a tree data structure:
 
-![Family Tree example](exampleTree.png)
+![Family Tree example](img/exampleTree.png)
 
 Chris and Taylor (Alex's parents) are at the top level, because they are the roots from Alex's side.
 Casey and Drew (Jordan's parents) are also at the top level, representing the roots from Jordan's side.
@@ -39,7 +39,7 @@ This creates a hierarchy where you can trace the lineage and relationships from 
 
 Understanding the terminology used in tree data structures is crucial for grasping how they function and are utilized in Programing. Here are some key terms:
 
-![Tree Structure](tree-struct.png)
+![Tree Structure](img/tree-struct.png)
 
 **A. NODE**
 : A node is the basic unit of a tree data structure. Think of it like a single data point or a container that holds values or information. In a family tree, a person would be represented as a node. The circle shapes above are nodes.
@@ -78,7 +78,7 @@ The left and right subtree each must also be a binary search tree.
 
 **Since each node of this tree has only 2 children, it can be said that this tree is a Binary Tree**
 
-![Binary Tree](binaryTree.png)
+![Binary Tree](img/binaryTree.png)
 
 **Example:**  
 Consider a small family tree. At the top is a grandparent node, with two children nodes representing the parent generation (say, an aunt and a parent). The parent node also has two children (you and a sibling). Each person is a node, and each node has at most two children.
@@ -169,7 +169,7 @@ print(bst.search(6))  # Output: False, indicating that 6 was not found in the BS
 ### C. BALANCED TREE / AVL Tree
 A balanced tree is designed to keep the tree's height as low as possible while adding or removing nodes to maintain quick search times. This type of tree adjusts itself (rebalances) to ensure that no leaf is much farther away from the root than any other leaf.
 
-![avl](avl.png)
+![avl](img/avl.png)
 
 **AVL tree is a self-balancing Binary Search Tree (BST) where the difference between heights of left and right subtrees for any node cannot be more than one.**
 
@@ -179,7 +179,7 @@ Think of it like organizing a competition where teams are in a tournament bracke
 ### D. B-TREE
 A B-tree is a self-balancing tree data structure that maintains sorted data in a way that allows for searches, sequential access, insertions, and deletions in logarithmic time. It's commonly used in databases and filesystems.
 
-![b-tree](b-tree.png)
+![b-tree](img/b-tree.png)
 
 **Example:**  
 Imagine a filing system used by a large corporation for storing employee records in several cabinets. Each cabinet (node) can hold multiple files (children), and the cabinets are organized in a way that makes it easy to add new employee records, find a specific file quickly, or remove old records efficiently, even as the total number of files grows very large.
@@ -218,6 +218,9 @@ The different tree traversal methods have various applications:
 - **Dependency Trees:** In systems where tasks have dependencies, postorder traversal can ensure tasks are completed in the correct order, with dependent tasks being done first.
 
 Each traversal method offers a unique way to navigate and utilize the structure of trees, making tree traversal a fundamental concept in algorithms and data structures.
+
+Here are some common function used in a BST:
+![Bst Table](img/bstTable.png)
 
 ### EXAMPLES PROBLEMS
 1. Inorder Traversal Example: Sort a Binary Search Tree (BST)
@@ -363,8 +366,8 @@ Consider how you will handle nodes that represent operators versus those that re
 Think about how the recursive nature of postorder traversal can help you evaluate the expression as you traverse the tree.
 This challenge requires students to apply their understanding of postorder traversal to solve a practical problem, reinforcing their grasp of both tree traversal and expression evaluation concepts.
 
-[Python File](arithmetic_expression_tree_challenge.py)
+[Python File](python-Files/arithmetic_expression_tree_challenge.py)
 
 After completing the exercise go ahead and check the solution.
 
-[solution file](arithmetic_expression_tree_solution.py)
+[Solution](python-Files/arithmetic_expression_tree_solution.py)

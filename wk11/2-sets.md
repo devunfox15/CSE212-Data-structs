@@ -20,7 +20,7 @@ So, in our example using sets helps us keep our records clean and organized, whi
 
 I want to let you know that creating a set is very simple and useful to avoid redundancy. I dropped below the basic python code for using the set Data Structure and their performance in Big O. 
 
-![SetPython](SetPython.png)
+![SetPython](img/SetPython.png)
 
 ### OPERATIONS ON SETS
 
@@ -184,8 +184,8 @@ These examples demonstrate how sets can be used to efficiently solve problems re
 **CHALLENGE**
 Here is a sample problem that will teach you how to use a circular. Go ahead and solve this problem.
 
-([setsQuestion.py](setsQuestion.py))
+([setsQuestion.py](python-Files/setsQuestion.py))
 
 After writing the the code above compare it to this code block here. This is a sample solution.
 
-([setsAnswerKey.py](setsAnswerKey.py))
+([setsAnswerKey.py](python-Files/setsAnswerKey.py))
