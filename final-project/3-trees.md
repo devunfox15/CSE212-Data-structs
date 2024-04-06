@@ -29,7 +29,7 @@ Chris and Taylor are connected to Alex.
 Casey and Drew are connected to Jordan.
 Alex and Jordan are connected to each other and to their children, Pat and Sam.
 Pat is connected to Quinn.
-This creates a hierarchy where you can trace the lineage and relationships from the roots down to the youngest generation. Each person in the tree is a "node," and the connections between them are the "edges." This structure makes it easy to navigate the family relationships, similar to how data can be organized and managed in a computer's tree data structure.
+This creates a hierarchy where you can trace the lineage and relationships from the roots down to the youngest generation. Each person in the tree is a "node," and the connections between them are the "edges."
 
 [Resource](https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/)
 
@@ -62,21 +62,13 @@ The height of a tree is the length of the longest path from the root to a leaf. 
 **G. DEPTH**:
 The depth of a node is the number of edges from the root to the node. It indicates the level at which the node sits in the tree. For example, in a family tree, the generation level (how far from the oldest ancestor) would represent the depth of a person-node in that tree.
 
-**These terms form the foundation of understanding tree data structures, allowing for a clear communication of concepts and operations within them.**
+
 
 ## TYPES OF TREES 
 Trees come in various types, each with its unique properties and applications. Understanding these types helps in choosing the right tree for a specific problem. Here's a brief overview of some common types of trees along with examples for better understanding:
 
 ### A. BINARY TREE
 A binary tree is a tree data structure where each node has at most two children, referred to as the left child and the right child. It's a simple and foundational type of tree used in many applications.
-
-A binary Search Tree is a node-based binary tree data structure that has the following properties:
-
-The left subtree of a node contains only nodes with keys lesser than the node’s key.
-The right subtree of a node contains only nodes with keys greater than the node’s key.
-The left and right subtree each must also be a binary search tree.
-
-**Since each node of this tree has only 2 children, it can be said that this tree is a Binary Tree**
 
 ![Binary Tree](img/binaryTree.png)
 
@@ -90,6 +82,14 @@ A binary search tree is a special kind of binary tree that is used for efficient
 ### BST Node Structure
 First, define the structure of a node in the BST.
 
+The tree will look like the following in the code example below: 
+```
+    5
+   / \
+  3   7
+ / \
+2   4
+```
 ```python
 # Define a TreeNode class to represent each node in the tree
 class TreeNode:
@@ -186,6 +186,7 @@ Imagine a filing system used by a large corporation for storing employee records
 
 There are main different tree structure out there, if your interested in looking at different types of trees click here: 
  [Source](https://www.geeksforgeeks.org/types-of-trees-in-data-structures/)
+
 ## TREE TRAVERSAL
 
 Tree traversal is the process of visiting all the nodes in a tree and can be performed in various ways. Each method of traversal visits the nodes in a different order, which can be useful for different applications. Here are three common methods of tree traversal:
@@ -227,7 +228,6 @@ Here are some common function used in a BST:
 This example uses inorder traversal to extract elements from a BST in sorted order.
 
 ```python
-Copy code
 class TreeNode:
     def __init__(self, value):
         self.value = value
@@ -255,12 +255,13 @@ root.right.right = TreeNode(8)
 sorted_values = inorder_traversal(root)
 print("Sorted Values:", sorted_values)
 ```
+The inorder traversal of the binary tree resulted in the sorted values: [2,3,4,5,6,7,8]. 
+This demonstrates how an inorder traversal of a binary search tree will naturally process the nodes in ascending order, given the tree's inherent structure.
 
 2. Preorder Traversal Example: Serialize a Tree
 This example demonstrates how to use preorder traversal to serialize a tree into a string which can later be deserialized back into the tree.
 
 ```python
-Copy code
 class TreeNode:
     def __init__(self, value):
         self.value = value
@@ -288,11 +289,13 @@ root.right.right = TreeNode(5)
 serialized_tree = serialize(root)
 print("Serialized Tree:", serialized_tree)
 ```
+The serialization of the given binary tree results in the string: "1 2 # # 3 4 # # 5 # #". This represents a preorder traversal where each node is visited before its children, and a marker '#' is used to denote the absence of a child (a None node).
+
+
 3. Postorder Traversal Example: Calculate the Total Sum of All Nodes
 This example uses postorder traversal to calculate the sum of all nodes in a binary tree.
 
 ```python
-Copy code
 class TreeNode:
     def __init__(self, value):
         self.value = value
@@ -317,6 +320,8 @@ root.right.right = TreeNode(18)
 total_sum = postorder_sum(root)
 print("Total Sum:", total_sum)
 ```
+The total sum of all the nodes in the binary tree, calculated using a postorder traversal, is 
+58.
 
 **CHALLENGE**
 
